@@ -1,8 +1,6 @@
 # Disinformation Study
 
 ## Preliminary
-* **Load Dataset**. There are two datasets and one pre-trained language model need to be downloaded and placed in the "fake-and-real-news-dataset" folder. They are (1) [fake news data](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset?select=Fake.csv) (23,538 articles), (2) [real news data](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset?select=True.csv) (21,418 articles), and (3) [Google pre-trained word2vec model](https://code.google.com/archive/p/word2vec/) (3 million words and each has a 300-dim vector). Also, you have the backup online addresses, fake news data [here](https://drive.google.com/file/d/1T798b0Qi4AB6GzOTccbsCaPmhSI_0iN9/view?usp=sharing), real news data [here](https://drive.google.com/file/d/15mOoPsUaI9OeWiHJ5XP-u_oDlrxzeo8z/view?usp=sharing), and pre-trained word2vec [here](https://drive.google.com/file/d/1W8EfxWRBchX_c6ShC6neZRKlokhPV4tR/view?usp=sharing).
-
 * **Required Libraries**.
   - numpy 1.20.1
   - scipy 1.6.2
@@ -11,6 +9,8 @@
   - gensim 4.0.1
   - sklearn 0.24.1
   - torch 1.9.0
+
+* **Load Dataset**. There are two datasets and one pre-trained language model need to be downloaded and placed in the "fake-and-real-news-dataset" folder. They are (1) [fake news data](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset?select=Fake.csv) (23,538 articles), (2) [real news data](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset?select=True.csv) (21,418 articles), and (3) [Google pre-trained word2vec model](https://code.google.com/archive/p/word2vec/) (3 million words and each has a 300-dim vector). Also, you have the backup online addresses, fake news data [here](https://drive.google.com/file/d/1T798b0Qi4AB6GzOTccbsCaPmhSI_0iN9/view?usp=sharing), real news data [here](https://drive.google.com/file/d/15mOoPsUaI9OeWiHJ5XP-u_oDlrxzeo8z/view?usp=sharing), and pre-trained word2vec [here](https://drive.google.com/file/d/1W8EfxWRBchX_c6ShC6neZRKlokhPV4tR/view?usp=sharing).
 
 * **Article Embedding**
   - [Word Graph Construction] We contrust an undirected word graph for each news article. Briefly, if two words co-occur in a length-specified sliding window, then there will be an edge connecting these two words. For example, "I eat an apple" and the length of the window is 2, then edges could be {I-eat, I-an, eat-an, eat-apple} (with stop words kept). More details of constructing a word graph can be found at [TextRank](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf).
