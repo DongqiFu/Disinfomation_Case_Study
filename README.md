@@ -22,7 +22,7 @@
   - 1.1 [Accuracy] Run "classification_acc.py", which is responsible for training an accuracy-acceptable classifier (e.g. MuFasa model by "mufasa.py" or MLP by sklearn) and saving the classification model
   - 1.2 [Precision, Recall, and F1-score] Run "other_metrics.py" to test the trained classider in terms of other metrics, like precision, recall, and F1-score.
 * **2. Explanation**
-  - 2.1 [Misleading Degree] Run "top_n_words.py" to find top n misleading words in a news article. For example, with word w the fake article news a is detected as fake news with probability p, without word w the fake article news a is detected as fake news with probability q, then the probability gain of w to a is (q-p).
+  - 2.1 [Misleading Degree] Run "top_n_words.py" to find top n misleading words in a news article. For example, with word _w_ the fake article news a is detected as fake news with probability _p_, without word _w_ the fake article news a is detected as fake news with probability _q_, then the probability gain of _w_ to a is _(q-p)_.
 * **3. Robustness**
-  - 3.1 [Varying Feature Dimensions] Run "dimension_redution.py" to reduce the feature dimension by PCA, and train a new classifier (e.g. MuFasa model by "mufasa.py" or MLP by sklearn) on the truncated feature matrix.
+  - 3.1 [Varying Feature Dimensions] Run "dimension_redution.py" to reduce the aricle embedding dimension by PCA, and train a new classifier (e.g. MuFasa model by "mufasa.py" or MLP by sklearn) on the truncated feature matrix.
   - 3.2 Label Noise Injection
