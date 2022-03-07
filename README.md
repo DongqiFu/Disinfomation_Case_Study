@@ -1,4 +1,4 @@
-# Disinformation Study
+# Disinformation Case Study
 
 ## Preliminary
 * **Required Libraries**.
